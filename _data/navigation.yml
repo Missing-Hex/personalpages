@@ -4,30 +4,12 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# The site title on the left of the header already links to the homepage, so
+# there is no "Home" entry here.
 
 main:
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
   - title: "Portfolio"
     url: /portfolio/
-        
-  - title: "Blog Posts"
+
+  - title: "Blog"
     url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
