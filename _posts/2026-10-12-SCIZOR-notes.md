@@ -17,9 +17,7 @@ link: https://arxiv.org/abs/2505.22626
 + suboptimal： 比如碰撞、抖动等错误或不良工作，可能会强化错误来教坏策略
 + redundant： 过渡重复某种模式，可能会盖过其他有信息量且多样的样本，稀释学习信号
 
-![SCIZOR 方法总览：左侧用进度估计剔除次优片段，右侧用相似度聚类去除冗余，两者的保留结果合并为 curated dataset](/images/scizor-overview.png)
-
-*图源：SCIZOR 论文（[arXiv:2505.22626](https://arxiv.org/abs/2505.22626)）*
+![方法总览](/images/scizor-overview.png)
 
 ### Suboptimal Transition Removal via Progress Estimation
 
