@@ -20,7 +20,7 @@ repository               : "m1ngyuJiang/m1ngyuJiang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Mingyu Jiang"
   bio              : "A newbie."
   employer         : "Peking University"
