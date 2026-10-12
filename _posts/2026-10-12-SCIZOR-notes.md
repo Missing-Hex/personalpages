@@ -33,7 +33,7 @@ insight：对于正确的操作而言，任务的进度应该随时间而增长�
 + 考虑未来影响（随着时间递减），因为当前的一个次优操作也是可能影响到后来的
 + 考虑 transition 所属的整条轨迹的质量
 
-我们假设子轨迹中每个 transition 的贡献相同，那么得分 $V_{i:i+T}$ 均匀分配到每个 transition 上，由此可计算出单个 transition 的得分：$\hat{V}_i = \sum_{t=i-T}^{i} \frac{V_{t:t+T}}{T}$。再考虑到未来影响，得到 $V_i = \sum_{t=i}^{T} \gamma^{t-i} \hat{V}_t$，其中 $\gamma$ 是衰减系数。最后我们将每个 transition 的得分与整个轨迹的平均分融合得到最终得分：
+我们假设子轨迹中每个 transition 的贡献相同，那么得分 $V_{i:i+T}$ 均匀分配到每个 transition 上，由此可计算出单个 transition 的得分：$\hat V_i = \sum_{t=i-T}^{i} \frac{V_{t:t+T}}{T}$。再考虑到未来影响，得到 $V_i = \sum_{t=i}^{T} \gamma^{t-i} \hat V_t$，其中 $\gamma$ 是衰减系数。最后我们将每个 transition 的得分与整个轨迹的平均分融合得到最终得分：
 $$
 V_i^{final} = \alpha \cdot V_i + (1 - \alpha) \cdot \frac{1}{N} \sum_{j=1}^{N} V_j
 $$
